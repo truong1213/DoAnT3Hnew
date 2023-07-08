@@ -1,0 +1,5 @@
+{%for fm in form%}
+{%csrf_token%}
+{{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small>
+<br>
+{%endfor%}

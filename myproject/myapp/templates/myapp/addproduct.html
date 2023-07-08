@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <h3>Thêm sản phẩm</h3>
+    <hr>
+    <form action="" method="post" id="addProductForm" name="addproduct" enctype="multipart/form-data">
+        {%for fm in form%}
+        {{fm.label_tag}}{{fm}} <small class="text-danger">{{fm.errors|striptags}}</small> <br>  
+        {%endfor%}
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
+              
